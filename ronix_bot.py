@@ -9,8 +9,9 @@ import time
 # ============================================
 # CONFIGURATION — Add your keys here
 # ============================================
-FOOTBALL_API_KEY = 'bff317ffe0a746d6abf4208d6ed9731d'
-TELEGRAM_TOKEN = '8975522188:AAGIQ-Rq8XGLS2xAao6vmOj8aZyc80t6ISs'
+import os
+FOOTBALL_API_KEY = os.environ.get(bff317ffe0a746d6abf4208d6ed9731d', '')
+TELEGRAM_TOKEN = os.environ.get('8975522188:AAGIQ-Rq8XGLS2xAao6vmOj8aZyc80t6ISs', '')'
 CHANNEL_ID = '@RONIXpredictions'
 
 # ============================================
