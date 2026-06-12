@@ -1,17 +1,12 @@
-# RONIX BOT - Automated Daily Predictions
-# Version 2.0 - GitHub + Render Deployment
-
 import requests
 import telebot
-from datetime import datetime, timedelta
+import math
 import time
-
-# ============================================
-# CONFIGURATION — Add your keys here
-# ============================================
 import os
-FOOTBALL_API_KEY = os.environ.get(bff317ffe0a746d6abf4208d6ed9731d', '')
-TELEGRAM_TOKEN = os.environ.get('8975522188:AAGIQ-Rq8XGLS2xAao6vmOj8aZyc80t6ISs', '')'
+from datetime import datetime, timedelta
+
+FOOTBALL_API_KEY = os.environ.get('bff317ffe0a746d6abf4208d6ed9731d', '')
+TELEGRAM_TOKEN = os.environ.get('8975522188:AAGIQ-Rq8XGLS2xAao6vmOj8aZyc80t6ISs', '')
 CHANNEL_ID = '@RONIXpredictions'
 
 # ============================================
